@@ -51,7 +51,7 @@ function updateTable(){
 function updateFinalGrades(){
         const finalAverage = calculatesFinalAverage()
 
-        document.getElementById("final-average-value").innerHTML = finalAverage
+        document.getElementById("final-average-value").innerHTML = finalAverage.toFixed(2)
         document.getElementById("final-average-result").innerHTML = finalAverage >= minimumGrade ? spanApproved : spanFlunked
 }
 
