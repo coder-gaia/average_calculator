@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="graduation hat">
+            <h1>Average Calculator</h1>
+        </header>
+        <form id="form-lesson">
+            <input type="text" required placeholder="Lesson title:" id="lesson-title">
+            <input type="number" required placeholder="Grade:" min="0" max="10" class="input-grade" id="lesson-grade">
+            <button type="submit"> Add +</button>
+        </form>
+        <table cellspacing="0">
+
+            <thead>
+                <tr>
+                    <th>
+                        Lesson title
+                    </th>
+                    <th>Grade</th>
+                    <th>Approved?</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Final Average:</td>
+                    <td id="final-average-value">---</td>
+                    <td id="final-average-result">---</td>
+                </tr>
+            </tfoot>
+
+        </table>  
+
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
